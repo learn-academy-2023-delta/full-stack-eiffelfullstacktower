@@ -1,9 +1,10 @@
 
-<h1> Here are the blogs </h1>
+<h1> Here Are Our Blogs </h1>
 <ul>
     <% @blogs.each do |blog| %>
     <li> <%= link_to blog.title, blog_path(blog) %> </li>    
     <% end %>
 </ul>
+<p> Welcome to our blog page, we like to troll people here. </p>
 
 <%= link_to 'Add a blog', new_blog_path %>

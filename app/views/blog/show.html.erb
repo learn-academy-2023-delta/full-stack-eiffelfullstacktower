@@ -4,3 +4,6 @@
 
 <h1> Content: <%= @blog.content %> </h1>
 <%= link_to 'back to main page', blogs_path %>
+<%= link_to 'Edit The Blog', edit_blog_path(@blog) %>
+<%= button_to 'Delete Blog', delete_blog_path(@blog), method: :delete %>
+

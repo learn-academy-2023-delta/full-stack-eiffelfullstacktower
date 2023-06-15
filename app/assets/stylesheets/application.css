@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    perspective: 150px;
+    background-color: rgb(221, 201, 201);
+    background-image: linear-gradient(to right bottom, rgba(161, 88, 234, 0.185), rgba(193, 112, 222, 0.256)), url(https://c0.wallpaperflare.com/preview/304/675/785/san-diego-united-states-downtown-bridge.jpg);
+    background-size: cover;
+    text-align: center;
+    
+}
+h1 {
+    text-align: center;
+   animation-name: spin;
+   animation-duration: 3s;
+   animation-timing-function: ease-in;
+}
+
+ul {
+    list-style: none;
+}
+
+@keyframes spin {
+    0%{transform: rotateZ(0deg);
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+        transform: translateY(150px);
+        opacity: 0;}
+    50%{transform: rotateZ(180deg);
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);}
+    100%{transform: rotateZ(360deg);
+        transform: rotateX(360deg);
+        transform: rotateY(360deg);
+        transform: translateY(0px);
+        opacity: 1;}
+
+}
